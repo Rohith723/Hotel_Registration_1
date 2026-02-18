@@ -10,7 +10,7 @@
         
             <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control border-0 border-bottom rounded-0 p-3 bg-transparent" placeholder="Username" ValidationGroup="LoginGroup"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" CssClass="text-danger" Display="Dynamic" ErrorMessage="Username required" ValidationGroup="LoginGroup"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control border-0 border-bottom rounded-0 p-3 bg-transparent mt-3" placeholder="Password" ValidationGroup="LoginGroup"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control border-0 border-bottom rounded-0 p-3 bg-transparent mt-3" placeholder="Password" ValidationGroup="LoginGroup" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" CssClass="text-danger" ErrorMessage="Password required" Display="Dynamic" ValidationGroup="LoginGroup"></asp:RequiredFieldValidator>
         
         </div>
