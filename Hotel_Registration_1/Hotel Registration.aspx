@@ -35,11 +35,11 @@
 
             <div class="mt-4" style="font-size:12px;letter-spacing:3px;color:#c9a14a;">ACCOMMODATIONS</div>
             <div class="border-rounded p-3 mt-2">
-                <asp:RadioButton ID="RadioButton1" runat="server" Font-Bold="True" Text="Deluxe"/>
+                <asp:RadioButton ID="RadioButton1" runat="server" Font-Bold="True" Text="Deluxe" GroupName="rbroom"/>
                 &nbsp;<p class="small text-muted ms-4">City views, king bedding & premium luxury.</p>
             </div>
             <div class="border-rounded p-3">
-                <asp:RadioButton ID="RadioButton2" runat="server" Font-Bold="True" Text="Standard"/>
+                <asp:RadioButton ID="RadioButton2" runat="server" Font-Bold="True" Text="Standard" GroupName="rbroom"/>
                 &nbsp;<p class="small text-muted ms-4">Elegant comfort with garden views.</p>
             </div>
 

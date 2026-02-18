@@ -35,6 +35,6 @@
             </div>
         </div>
         <!--Button-->
-        <asp:Button ID="Button1" runat="server" Text="CHECK HOTEL DETAILS" CssClass="btn w-100 mt-4" style="background:#c9a14a; color:white;letter-spacing:3px;padding:15px;max-width:420px;" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="CHECK HOTEL DETAILS" CssClass="btn w-50 mt-4" style="background:#c9a14a; color:white;letter-spacing:3px;padding:15px;max-width:250px;" OnClick="Button1_Click" />
     </div>
 </asp:Content>

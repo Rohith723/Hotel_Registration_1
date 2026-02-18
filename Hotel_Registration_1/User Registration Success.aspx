@@ -21,6 +21,6 @@
         <p class="text-center text-muted mt-3">Welcome to the distinguished portfolio of <span style="color:#c9a14a">Estate Hotels LTD.</span>Your executive access has been successfully authenticated.</p>
 
         <!--Login -->
-        <asp:Button ID="Button1" runat="server" Text="CLICK ON LOGIN TO CHECK DETAILS" CssClass="btn w-100 mt-3" style="background:#c9a14a; color:black;letter-spacing:2px; padding:14px;" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="CLICK ON LOGIN TO CHECK DETAILS" CssClass="btn w-50 mt-3" style="background:#c9a14a; color:black;letter-spacing:2px; padding:14px;" OnClick="Button1_Click" />
     </div>
 </asp:Content>
