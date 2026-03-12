@@ -26,15 +26,15 @@
             </EditItemTemplate>
         </asp:TemplateField>
 
-        <asp:TemplateField HeaderText="Email">
-            <ItemTemplate>
-                <%# Eval("Email") %>
-            </ItemTemplate>
-            <EditItemTemplate>
-                <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"
-                    Text='<%# Bind("Email") %>' />
-            </EditItemTemplate>
-        </asp:TemplateField>
+       <asp:TemplateField HeaderText="Email" ItemStyle-Width="250px">
+    <ItemTemplate>
+        <%# Eval("Email") %>
+    </ItemTemplate>
+    <EditItemTemplate>
+        <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"
+            Text='<%# Bind("Email") %>' />
+    </EditItemTemplate>
+</asp:TemplateField>
 
         <asp:TemplateField HeaderText="Phone">
             <ItemTemplate>

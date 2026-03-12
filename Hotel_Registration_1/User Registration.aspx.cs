@@ -45,19 +45,24 @@ namespace Hotel_Registration_1
             Address = TextBox7.Text;
             Password = TextBox8.Text;
             ConfirmPassword = TextBox9.Text;
-            if (CheckBox1.Checked == true)
+            List<string> languages = new List<string>();
+
+            if (CheckBox1.Checked)
             {
-                LanguagesKnown += CheckBox1.Text + " , ";
+                languages.Add(CheckBox1.Text);
             }
-            if (CheckBox2.Checked == true)
+
+            if (CheckBox2.Checked)
             {
-                LanguagesKnown += CheckBox2.Text + " , ";
+                languages.Add(CheckBox2.Text);
             }
-            if (CheckBox3.Checked == true)
+
+            if (CheckBox3.Checked)
             {
-                LanguagesKnown += CheckBox3.Text;
+                languages.Add(CheckBox3.Text);
             }
-            LanguagesKnown= LanguagesKnown.TrimEnd(',', ' ');
+
+            LanguagesKnown = string.Join(", ", languages);
 
             string query = "INSERT INTO UserRegistration(FirstName,LastName,UserName,Age,Gender,Email,PhoneNumber,Country,Address,Password,ConfirmPassword,LanguagesKnown) values(@FirstName,@LastName,@UserName,@Age,@Gender,@Email,@PhoneNumber,@Country,@Address,@Password,@ConfirmPassword,@LanguagesKnown)";
             SqlConnection con = new SqlConnection("data source=.; database=Hotel_Registration; integrated security=true");

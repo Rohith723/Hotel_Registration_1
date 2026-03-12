@@ -66,7 +66,7 @@
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="Use 8+ chars with upper, lower, number &amp; symbol." ControlToValidate="TextBox8" CssClass="text-danger" Display="Dynamic" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&amp;#^()_+\-=\[\]{};':&quot;\\|,.&lt;&gt;\/?]).{8,}$"></asp:RegularExpressionValidator>
 
                 <asp:TextBox ID="TextBox9" runat="server" placeholder="Confirm Password" CssClass="form-control border-0 border-bottom rounded-0 mt-3" TextMode="Password"></asp:TextBox>
-                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="CompareValidator" ControlToCompare="TextBox8" ControlToValidate="TextBox9" CssClass="texter-danger" Display="Dynamic"></asp:CompareValidator>
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password Doesnot match" ControlToCompare="TextBox8" ControlToValidate="TextBox9" CssClass="texter-danger" Display="Dynamic"></asp:CompareValidator>
 
         <!--Preferences-->
         <h6 class="mt-4" style="font-family:'Playfair Display'">Preferences</h6>
@@ -78,11 +78,11 @@
         </div>
          <div class="form-check">
             <asp:CheckBox ID="CheckBox2" runat="server" CssClass="form-check-input" />
-            <asp:Label ID="Label2" runat="server" Text="Hindi" CssClass="fom-check-label"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Hindi" CssClass="form-check-label"></asp:Label>
         </div>
          <div class="form-check">
             <asp:CheckBox ID="CheckBox3" runat="server" CssClass="form-check-input" />
-            <asp:Label ID="Label3" runat="server" Text="Telugu" CssClass="fom-check-label"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Telugu" CssClass="form-check-label"></asp:Label>
         </div>
 
         <!--Submit-->
